@@ -1,0 +1,28 @@
+# Clicknote
+
+> 把浏览器操作录成素材（截图 + DOM 坐标 + 滚动位置），交给 AI 写出脱敏的图文教程。开源，本地优先，MIT。
+
+一句话区分：Scribe / Tango / Mimik 是「录完自动出文档」的 GUI 工具，Clicknote 是「采集原始素材 + 由 AI 判断和撰写」的管线。产物是 `steps.json` + Markdown，能进 git、能 diff、能批量重跑。
+
+## 核心文档
+
+- [README.md](https://github.com/Baraka3/clicknote/blob/main/README.md): 项目定位、安装、工作流、已知局限
+- [SKILL.md](https://github.com/Baraka3/clicknote/blob/main/SKILL.md): 给 AI 的判断规范——哪一帧算一步、标题怎么写、正文写什么、哪里必须打码。这是本项目的核心资产
+- [docs/capture-format.md](https://github.com/Baraka3/clicknote/blob/main/docs/capture-format.md): 采集 JSON 协议全字段，含坐标约定与版本差异
+- [docs/redaction-rules.md](https://github.com/Baraka3/clicknote/blob/main/docs/redaction-rules.md): 打码判据，按「能否指向具体个人」判断，不看控件类型
+- [AGENTS.md](https://github.com/Baraka3/clicknote/blob/main/AGENTS.md): 给 AI 编码助手的项目约定
+- [install.md](https://github.com/Baraka3/clicknote/blob/main/install.md): 供 AI 读取并执行的安装流程
+
+## 关键事实
+
+- 扩展：Chrome / Edge，Manifest V3，纯原生 JS，无构建
+- 脚本：Python 3.9+，只依赖 Pillow
+- 高亮与打码坐标来自 `getBoundingClientRect()`，不是图像识别，误差 ≤1px
+- 数据全程本地，无服务端、无账号、无遥测
+- 许可证 MIT
+
+## 常见问题
+
+**需要 SSN 之类的敏感信息吗** —— 不需要，工具只处理用户自己的截图。
+**能替代 Scribe 吗** —— 不能。Scribe 装完即用；这个需要 AI 助手配合，换来的是可版本控制、可批量重跑。
+**支持手机端吗** —— 不支持。只采桌面浏览器的网页操作。
