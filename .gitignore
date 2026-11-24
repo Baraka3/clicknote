@@ -1,0 +1,22 @@
+# 采集与渲染产物（只忽略根目录下的，examples/ 里的示例要保留）
+/capture/
+/capture.json
+/tutorial-capture-*.json
+/steps.json
+/steps.rendered.json
+/demo/
+/out/
+.tmp-check/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

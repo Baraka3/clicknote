@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{width:320px;overflow-x:hidden;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+       background:#fff;color:#0F172A}
+  .hd{background:#1D4ED8;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:8px}
+  .hd b{font-size:14px;font-weight:600}
+  .dot{width:8px;height:8px;border-radius:50%;background:#94A3B8;flex:0 0 8px}
+  .dot.on{background:#34D399;box-shadow:0 0 0 3px rgba(52,211,153,.25)}
+  .body{padding:16px}
+  .stat{background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:14px;
+        display:flex;align-items:baseline;gap:6px;margin-bottom:14px}
+  .stat .n{font-size:28px;font-weight:700;color:#1D4ED8;line-height:1}
+  .stat .u{font-size:13px;color:#64748B}
+  .stat .warn{margin-left:auto;font-size:12px;color:#B45309}
+  button{width:100%;height:40px;border:0;border-radius:8px;font-size:14px;font-weight:600;
+         cursor:pointer;margin-bottom:8px;font-family:inherit}
+  .primary{background:#1D4ED8;color:#fff}
+  .primary:hover{background:#1E40AF}
+  .ghost{background:#F1F5F9;color:#334155}
+  .ghost:hover{background:#E2E8F0}
+  .danger{background:#FEF2F2;color:#B91C1C;height:34px;font-size:13px}
+  .danger:hover{background:#FEE2E2}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .tip{font-size:12px;color:#64748B;line-height:1.7;margin-top:10px;
+       border-top:1px solid #F1F5F9;padding-top:10px}
+  .tip b{color:#334155;font-weight:600}
+  .host{font-size:12px;color:#64748B;background:#F8FAFC;border:1px solid #E2E8F0;
+        border-radius:6px;padding:7px 10px;margin-bottom:10px;word-break:break-all}
+  .host b{color:#1D4ED8;font-weight:600}
+  .sub{font-size:12px;color:#64748B;margin:-4px 0 10px}
+  .sub:empty{display:none}
+  .done{display:none;background:#ECFDF5;border:1px solid #A7F3D0;color:#065F46;
+        border-radius:8px;padding:10px;font-size:12px;margin-bottom:10px;line-height:1.6}
+</style>
+</head>
+<body>
+  <div class="hd"><span class="dot" id="dot"></span><b id="title">图文教程采集器</b></div>
+  <div class="body">
+    <div class="stat">
+      <span class="n" id="count">0</span><span class="u">步已采集</span>
+      <span class="warn" id="skipped"></span>
+    </div>
+    <div class="host" id="host"></div>
+    <div class="sub" id="scrolls"></div>
+    <div class="done" id="done">已导出，文件在浏览器下载目录。</div>
+    <button class="primary" id="btnStart">开始采集</button>
+    <button class="ghost" id="btnPause">暂停采集</button>
+    <button class="ghost" id="btnStop">结束采集</button>
+    <button class="ghost" id="btnExport">导出素材（JSON）</button>
+    <button class="danger" id="btnClear">清空本次记录</button>
+    <div class="tip">
+      <b>用法</b>：点「开始采集」→ 正常操作 → 「结束采集」→ 导出。<br>
+      只录<b>开始时的那个网站</b>，切到别的站点会自动忽略；需要中断就用「暂停采集」。<br>
+      截图与数据<b>只存在本机</b>，不上传任何服务器。
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
