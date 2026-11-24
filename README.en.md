@@ -51,14 +51,14 @@ Paste this into Claude Code / Cursor / WorkBuddy:
 
 ```
 Install Clicknote for me. Read
-https://raw.githubusercontent.com/<your-username>/clicknote/main/install.md
+https://raw.githubusercontent.com/Baraka3/clicknote/main/install.md
 first, then install the extension and Python scripts, and run the self-check.
 ```
 
 ### Manually
 
 ```bash
-git clone https://github.com/<your-username>/clicknote.git
+git clone https://github.com/Baraka3/clicknote.git
 cd clicknote
 pip install pillow
 
