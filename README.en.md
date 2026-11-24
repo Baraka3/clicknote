@@ -133,12 +133,17 @@ scripts/
   render.py          redact, highlight, lay out → md + html
   stitch.py          stitch frames into a full-page image using scrollY
   extract_steps.py   frame extraction from video (if you'd rather not install the extension)
-SKILL.md             the judgement spec handed to the AI — this is the core asset
+SKILL.md             the judgement spec handed to the AI — the core asset (written in Chinese;
+                     the enforceable rules also appear in AGENTS.md and the Redaction rule above)
 AGENTS.md            project conventions for AI coding assistants
 llms.txt             structured index for LLM retrieval
 docs/                capture protocol, redaction criteria
 examples/minimal/    runnable example with fabricated data
 ```
+
+## Contributing
+
+See [CONTRIBUTING.en.md](CONTRIBUTING.en.md). Bug fixes and documentation corrections welcome; new features are not scheduled.
 
 ## License
 

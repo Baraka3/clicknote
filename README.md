@@ -140,6 +140,10 @@ docs/                采集格式、打码判据
 examples/minimal/    最小可跑示例
 ```
 
+## 参与
+
+见 [CONTRIBUTING.md](CONTRIBUTING.md)（英文版：[CONTRIBUTING.en.md](CONTRIBUTING.en.md)）。接受 bug 修复与文档纠错，不承诺新功能排期。
+
 ## 许可证
 
 MIT。随便用，包括商用，保留版权声明即可。
