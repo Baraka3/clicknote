@@ -1,5 +1,7 @@
 # Clicknote · 点击笔记
 
+简体中文 | [English](README.en.md)
+
 **把浏览器操作录成素材，让 AI 写出准确、脱敏、可复现的图文教程。**
 
 - **采集**：Chrome / Edge 扩展，点击、输入、滚动都记，坐标来自 DOM 而非图像识别，误差 ≤1px
@@ -132,6 +134,8 @@ scripts/
   stitch.py          按 scrollY 拼整页长图
   extract_steps.py   录屏视频抽帧（不想装扩展时用）
 SKILL.md             给 AI 的判断规范（本仓库即一个 skill 包）
+AGENTS.md            给 AI 编码助手的项目约定
+llms.txt             结构化索引，供 LLM 检索与摘要
 docs/                采集格式、打码判据
 examples/minimal/    最小可跑示例
 ```
