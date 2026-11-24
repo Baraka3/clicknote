@@ -79,13 +79,13 @@ Edge 一样：`edge://extensions` → 开发人员模式 → 加载解压缩的�
   "index": 12,
   "kind": "click",
   "tag": "button",
-  "text": "Check my eligibility",
-  "box": { "x": 0.343, "y": 0.7055, "w": 0.3063, "h": 0.0466 },
-  "redact": [[0.317, 0.279, 0.359, 0.044]],
-  "scrollY": 1284,
-  "docH": 3106,
-  "viewport": { "w": 1920, "h": 1031 },
-  "page_url": "https://example.com/apply",
+  "text": "Place order",
+  "box": { "x": 0.0625, "y": 0.8424, "w": 0.1688, "h": 0.0722 },
+  "redact": [[0.0625, 0.2597, 0.4375, 0.0611]],
+  "scrollY": 480,
+  "docH": 1180,
+  "viewport": { "w": 1280, "h": 720 },
+  "page_url": "https://demo.example.com/checkout",
   "shot": "data:image/png;base64,..."
 }
 ```

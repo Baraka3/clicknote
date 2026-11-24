@@ -75,9 +75,9 @@ pip install pillow
   "text": "Place order",
   "box": { "x": 0.0625, "y": 0.8424, "w": 0.1688, "h": 0.0722 },
   "redact": [[0.0625, 0.2597, 0.4375, 0.0611]],
-  "scrollY": 1284,
-  "docH": 3106,
-  "viewport": { "w": 1920, "h": 1031 },
+  "scrollY": 480,
+  "docH": 1180,
+  "viewport": { "w": 1280, "h": 720 },
   "shot": "data:image/png;base64,..."
 }
 ```

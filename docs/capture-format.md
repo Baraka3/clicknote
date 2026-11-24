@@ -9,7 +9,7 @@
   "generator": "tutorial-maker-extension/1.1.0",
   "exported_at": "2026-11-24T02:05:45.455Z",
   "pages": ["https://example.com/apply"],
-  "viewport": { "w": 1920, "h": 1031 },
+  "viewport": { "w": 1280, "h": 720 },
   "actions": [ ... ],
   "dropped": 35
 }
