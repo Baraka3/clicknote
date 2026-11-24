@@ -24,7 +24,7 @@ python -c "import PIL; print(PIL.__version__)"   # 需要 Pillow
 ## 1. 取代码
 
 ```bash
-git clone https://github.com/<你的用户名>/clicknote.git
+git clone https://github.com/Baraka3/clicknote.git
 cd clicknote
 ```
 

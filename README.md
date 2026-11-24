@@ -51,7 +51,7 @@ Clicknote 走另一条路：**只负责把原始素材采集准，判断交给 A
 
 ```
 帮我安装 Clicknote：先读
-https://raw.githubusercontent.com/<你的用户名>/clicknote/main/install.md
+https://raw.githubusercontent.com/Baraka3/clicknote/main/install.md
 按里面的步骤把浏览器扩展和 Python 脚本装好，装完跑一次自检。
 ```
 
@@ -60,7 +60,7 @@ AI 会自己检查环境、下载、装依赖，只在需要你点浏览器按�
 ### 方式二：手动装
 
 ```bash
-git clone https://github.com/<你的用户名>/clicknote.git
+git clone https://github.com/Baraka3/clicknote.git
 cd clicknote
 pip install pillow
 
