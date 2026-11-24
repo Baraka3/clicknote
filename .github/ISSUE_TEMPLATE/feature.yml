@@ -1,0 +1,29 @@
+name: 功能请求
+description: 想要新的采集能力、导出格式或打码规则
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本项目为维护模式：接受 bug 修复与文档纠错，不承诺新功能排期。
+        功能请求会先记着，看有多少人需要再排期。
+  - type: textarea
+    id: scene
+    attributes:
+      label: 你的场景
+      description: 你在做什么任务、卡在哪一步。比「希望支持 XX 功能」有用得多
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: 现在怎么绕过的
+      description: 如果已有临时办法，说明一下，能判断需求强度
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 影响范围
+      options:
+        - 只有我需要
+        - 我这类场景都需要
+        - 应该是普遍需求

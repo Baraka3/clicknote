@@ -1,0 +1,45 @@
+name: 采集或渲染出错
+description: 扩展没录到、截图不对、打码漏了、渲染报错
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提之前先看 [README 的已知局限](https://github.com/Baraka3/clicknote#已知局限)，
+        截图限速、iframe 不采集、拼接错位这些都是设计取舍，不是 bug。
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器与版本
+      placeholder: Chrome 141 / Edge 140
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: 出问题的环节
+      options:
+        - 采集（扩展没录到 / 截图不对）
+        - 导入（import_capture.py 报错）
+        - 渲染（render.py 打码或高亮不对）
+        - 拼接（stitch.py）
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 实际发生了什么
+      description: 期望什么 vs 实际什么。涉及采集的请说明页面类型（单页表单 / 多步向导 / 长文页面）
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 出问题那帧的字段
+      description: 从导出 JSON 里贴出该帧的 kind / scrollY / docH / viewport，截图可以不给
+      render: json
+  - type: textarea
+    id: error
+    attributes:
+      label: 报错信息
+      render: shell
