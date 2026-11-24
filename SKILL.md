@@ -1,5 +1,5 @@
 ---
-name: stepcraft
+name: clicknote
 description: 把浏览器操作或录屏转成带标注、带脱敏的图文教程。当用户要写操作教程、注册流程说明、软件使用指引，说"把这段录屏做成图文教程""把这几张截图整理成步骤""这个网站怎么注册，写个教程"时使用。触发词：图文教程、操作步骤、录屏转教程、教程生成、注册流程、手把手教程、step-by-step guide、tutorial from screenshots。
 ---
 

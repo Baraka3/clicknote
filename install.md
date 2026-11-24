@@ -1,6 +1,6 @@
-# StepCraft 安装说明（给 AI 助手读）
+# Clicknote 安装说明（给 AI 助手读）
 
-你正在为一个用户安装 StepCraft。它是一个 Chrome 扩展加一组 Python 脚本，用来把网页操作录成图文教程素材。
+你正在为一个用户安装 Clicknote。它是一个 Chrome 扩展加一组 Python 脚本，用来把网页操作录成图文教程素材。
 
 请按顺序执行，每一步都有验证方法。**只有在涉及浏览器界面操作时才停下来让用户动手**，其余都由你自己完成。
 
@@ -24,13 +24,13 @@ python -c "import PIL; print(PIL.__version__)"   # 需要 Pillow
 ## 1. 取代码
 
 ```bash
-git clone https://github.com/<你的用户名>/stepcraft.git
-cd stepcraft
+git clone https://github.com/<你的用户名>/clicknote.git
+cd clicknote
 ```
 
 没有 git 的话，让用户从仓库页面下载 ZIP 解压，效果一样。
 
-验证：`ls stepcraft/extension/manifest.json` 能看到文件。
+验证：`ls clicknote/extension/manifest.json` 能看到文件。
 
 ## 2. 装依赖
 

@@ -1,4 +1,4 @@
-# StepCraft
+# Clicknote
 
 **Record browser workflows as raw material. Let an AI write the tutorial.**
 
@@ -12,9 +12,9 @@ A Chrome extension captures clicks, screenshots, scroll positions and sensitive-
 
 [Scribe](https://scribehow.com), [Tango](https://tango.us) and [Mimik](https://github.com/westpoint-io/mimik) all solve "record once, get a document". Their copy is template-filled — editable in theory, slower to fix than to rewrite.
 
-StepCraft takes the other path: **capture precisely, let the AI judge.**
+Clicknote takes the other path: **capture precisely, let the AI judge.**
 
-| | Template-based tools | StepCraft |
+| | Template-based tools | Clicknote |
 |---|---|---|
 | Which frame is a step | rules | AI, against a written spec |
 | Who writes the copy | templates | AI in your project's voice, or you |
@@ -50,16 +50,16 @@ Step 3 is where quality happens. The skill spec requires action titles ("Click s
 Paste this into Claude Code / Cursor / WorkBuddy:
 
 ```
-Install StepCraft for me. Read
-https://raw.githubusercontent.com/<your-username>/stepcraft/main/install.md
+Install Clicknote for me. Read
+https://raw.githubusercontent.com/<your-username>/clicknote/main/install.md
 first, then install the extension and Python scripts, and run the self-check.
 ```
 
 ### Manually
 
 ```bash
-git clone https://github.com/<your-username>/stepcraft.git
-cd stepcraft
+git clone https://github.com/<your-username>/clicknote.git
+cd clicknote
 pip install pillow
 
 # Chrome → chrome://extensions → enable Developer mode

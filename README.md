@@ -1,6 +1,8 @@
-# StepCraft · 步骤工坊
+# Clicknote · 点击笔记
 
 **把浏览器操作录成素材，让 AI 写出准确、脱敏、可复现的图文教程。**
+
+> **维护模式**：接受 bug 修复与文档纠错，不承诺新功能排期。这个项目的价值在判断标准，不在功能数量。
 
 一个 Chrome 扩展负责采集（点击位置、截图、滚动位置、敏感字段），一套 Python 脚本负责渲染（打码、高亮、排版），一份 Skill 规范负责告诉 AI「怎么判断哪一帧才算一步、文案该写什么、哪里必须打码」。
 
@@ -10,9 +12,9 @@
 
 [Scribe](https://scribehow.com)、[Tango](https://tango.us)、[Mimik](https://github.com/westpoint-io/mimik) 都是好工具，它们解决的是「录完自动出一份文档」。它们的文案是模板生成的（"Click Submit"），你能改，但改起来比写还慢。
 
-StepCraft 走另一条路：**只负责把原始素材采集准，判断交给 AI。**
+Clicknote 走另一条路：**只负责把原始素材采集准，判断交给 AI。**
 
-| | 模板式工具 | StepCraft |
+| | 模板式工具 | Clicknote |
 |---|---|---|
 | 谁决定哪一帧算一步 | 规则 | AI，按你给的规范 |
 | 文案怎么写 | 模板填充 | AI 按你的项目语气重写，或你直接指定 |
@@ -48,8 +50,8 @@ StepCraft 走另一条路：**只负责把原始素材采集准，判断交给 A
 在 Claude Code / Cursor / WorkBuddy 里粘这段：
 
 ```
-帮我安装 StepCraft：先读
-https://raw.githubusercontent.com/<你的用户名>/stepcraft/main/install.md
+帮我安装 Clicknote：先读
+https://raw.githubusercontent.com/<你的用户名>/clicknote/main/install.md
 按里面的步骤把浏览器扩展和 Python 脚本装好，装完跑一次自检。
 ```
 
@@ -58,12 +60,12 @@ AI 会自己检查环境、下载、装依赖，只在需要你点浏览器按�
 ### 方式二：手动装
 
 ```bash
-git clone https://github.com/<你的用户名>/stepcraft.git
-cd stepcraft
+git clone https://github.com/<你的用户名>/clicknote.git
+cd clicknote
 pip install pillow
 
 # 扩展：Chrome 打开 chrome://extensions → 右上角开「开发者模式」
-# → 左上角「加载已解压的扩展程序」→ 选 stepcraft/extension 目录
+# → 左上角「加载已解压的扩展程序」→ 选 clicknote/extension 目录
 ```
 
 Edge 一样：`edge://extensions` → 开发人员模式 → 加载解压缩的扩展。
